@@ -1,5 +1,4 @@
-### Stellar gives us a briiliant way to create and control your own token.
-### We call it TRUST, and the number is 500,000,000 units.
+### Stellar gives us a brilliant way to create and control your own token. Token name-TRUST, total amount-500,000,000 units.
 
 
 1. Go to the [Stellar Laboratory](https://www.stellar.org/laboratory#account-creator?network=test), 
