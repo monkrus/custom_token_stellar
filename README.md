@@ -7,6 +7,7 @@ This will be your **issuing account**.
 
 
 Public Key	GBDJB7S5FWX5ESINHKCO2XPJLII2EGF53BXBVHAWSTZ27RR5U3QDFSTN, 
+
 Secret Key	SA7LJPMNEFNRC3WGHAWNCLIR5JGFQPKAVEJG5LDEFNK446AMDS3VKV4R
 
 
@@ -17,6 +18,7 @@ This will copy your public key into the text box, then click ‘Get test network
 and make a note of the public and private keys as well.
 
 Public Key	GCJQ7KWSJZJYBRCHJVDUDFJ7B6T6F3OZQ5HZSZMYQD2IXGUJA6UTMP3G, 
+
 Secret Key	SDEZUYJHYHYP4QF6HLSCVRRX2VDZ6HZEWSQZFBPYVKUZLMXVSM7MNLRC	
 
 4. Once you have done this you can check to ensure both accounts have a balance by 
