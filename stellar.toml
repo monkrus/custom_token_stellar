@@ -1,9 +1,9 @@
 
 [[UTILITY_TOKEN]]
-code="PHARMA"
+code="token code"
 issuer="GD5T6IPRNCKFOHQWT264YPKOZAWUMMZOLZBJ6BNQMUGPWGRLBK3U7ZNP"
 display_decimals=2 
-name="pharma"
-desc="1 PHARMA token entitles you to......"
+name="token name"
+desc="1 token entitles you to......"
 conditions="There will only ever be 100,000,000 tokens in existence.   "
 image="https://pbs.twimg.com/profile_images/666921221410439168/iriHah4f.jpg"
