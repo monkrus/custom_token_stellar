@@ -2,14 +2,14 @@
 var StellarSdk = require('stellar-sdk');
 var server = new StellarSdk.Server('https://horizon.stellar.org');
 
-// Keys for accounts to issue (Manufacturer) and receive (PharmHedge)
+// Keys for accounts to issue  and receive 
 var issuingKeys = StellarSdk.Keypair
   .fromSecret('SCZANGBA5YHTNYVVV4C3U252E2B6P6F5T3U6MM63WBSBZATAQI3EBTQ4');
 var receivingKeys = StellarSdk.Keypair
   .fromSecret('SDSAVCRE5JRAI7UFAVLE5IMIZRD6N6WOJUWKY4GFN34LOBEEUS4W2T2D');
 
 // Create an object to represent the new asset (utility  token)
-var pharma = new StellarSdk.Asset('UtilityToken', issuingKeys.publicKey());
+var token = new StellarSdk.Asset('UtilityToken', issuingKeys.publicKey());
 
 // First, the receiving account must trust the asset
 server.loadAccount(receivingKeys.publicKey())
@@ -21,7 +21,7 @@ server.loadAccount(receivingKeys.publicKey())
       // The `changeTrust` operation creates (or alters) a trustline
       // The `limit` parameter below is optional, limits the token amount
       .addOperation(StellarSdk.Operation.changeTrust({
-        asset: pharma,
+        asset: token,
         limit: '100000000'
       }))
       // setTimeout is required for a transaction
@@ -43,7 +43,7 @@ server.loadAccount(receivingKeys.publicKey())
     })
       .addOperation(StellarSdk.Operation.payment({
         destination: receivingKeys.publicKey(),
-        asset: pharma,
+        asset: token,
         amount: '100'
       }))
       // setTimeout is required for a transaction
